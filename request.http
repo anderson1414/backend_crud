@@ -1,0 +1,28 @@
+
+POST http://localhost:5000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "Nombres": "Jorge Carlos",
+    "Apellidos": "Gonzales Armijos",
+    "Edad": "23",
+    "CorreoInstitucional": "jorge.armijos@unl.edu.ec"
+}
+
+GET http://localhost:5000/api/users HTTP/1.1
+
+GET http://localhost:5000/api/users/6498a0e872f2611b06423b3f HTTP/1.1
+
+Put http://localhost:5000/api/users/6498a0e872f2611b06423b3f HTTP/1.1
+Content-Type: application/json
+
+{
+    "Nombres": "Jorge Pedro",
+    "Apellidos": "Guillermo Armijos",
+    "Edad": "28",
+    "CorreoInstitucional": "pedro.armijos@unl.edu.ec"
+}
+
+
+delete http://localhost:5000/api/users/6498a0e872f2611b06423b3f HTTP/1.1
+
